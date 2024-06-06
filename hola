@@ -1,0 +1,21 @@
+'''escribir un programa que solicite por teclado 10 notas de alumnos y nos informe cuantos tienen notas mayores o iguales a 7 y cuantos menores aprobados 
+(cuenta la cantidad de alumnos aprobados )'''
+
+#se inicializan las variables contadoras
+aprobados=0
+reprobados=0
+
+#se solicita el usuario que ingrese las 10 notas
+for i in range(10):
+    nota=float(input(f"ingrese la nota de alumno {i+1}:"))
+
+# se evelua si la nota es mayor o igual a 7
+if nota >= 7:
+    aprobados +=1
+else:
+    reprobados += 1
+
+#se muestran los resultados
+print(f"cantidad de alumnos aprobados:  {aprobados}")
+print(f"cantidad de alumnos reprobados: {reprobados}")
+
